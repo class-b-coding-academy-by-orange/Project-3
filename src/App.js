@@ -33,8 +33,8 @@ state = {
   .then(response => {
     //console.log(response)
     //console.log(response.data)
-    this.setState({videos : response.data, // Set The Response Array To The Array in "App State"
-          //selectedVideo: response.data[0]}); // Set "Selected Video" To First Element Of Response Array
+    this.setState({videos : response.data.items, 
+          //selectedVideo: response.data[0]}); 
   })
 })
   .catch(error => {
